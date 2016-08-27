@@ -5,7 +5,7 @@
 	"dateTime": "timestamp",
 	"location": "string",
 	"description": "string",
-	"eventColour": "hex",
+	"eventColour": "string",
 	"eventLink": "string"
 }
 
