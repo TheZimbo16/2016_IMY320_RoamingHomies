@@ -15,7 +15,8 @@
 	"author": "string",
 	"dateTime": "timestamp",
 	"title": "string",
-	"body": "string"
+	"body": "string",
+	"image": "binary"
 }
 
 // Users
