@@ -9,14 +9,6 @@
 	"eventLink": "string"
 }
 
-OR
-
-// Events
-{
-	"eventName": "string",
-	"eventLink": "string"
-}
-
 ----------------------------
 
 // Blog
