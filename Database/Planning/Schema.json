@@ -28,3 +28,13 @@
 	"email": "string",
 	"cell": "string"
 }
+
+// MailingList
+{
+	"location": "string",
+	"users": [
+		"ObjectID()",
+		"ObjectID()",
+		"ObjectID(),"
+		"..."]
+}
