@@ -9,24 +9,13 @@
 	"eventLink": "string"
 }
 
-----------------------------
-
-// Blog
-{
-	"author": "string",
-	"dateTime": "timestamp",
-	"articleID": [
-		"ObjectID(...)",
-		"ObjectId(...)",
-		"...."
-	]
-}
-
 // Article
 {
 	"_id": "ObjectId()",
+	"author": "string",
+	"dateTime": "timestamp",
 	"title": "string",
-	"article": "string"
+	"body": "string"
 }
 
 // Users
