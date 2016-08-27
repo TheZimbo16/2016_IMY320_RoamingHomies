@@ -1,0 +1,48 @@
+// Events
+{
+	"creator": "string",
+	"eventName": "string",
+	"dateTime": "timestamp",
+	"location": "string",
+	"description": "string",
+	"eventColour": "hex",
+	"eventLink": "string"
+}
+
+OR
+
+// Events
+{
+	"eventName": "string",
+	"eventLink": "string"
+}
+
+----------------------------
+
+// Blog
+{
+	"author": "string",
+	"dateTime": "timestamp",
+	"articleID": [
+		"ObjectID(...)",
+		"ObjectId(...)",
+		"...."
+	]
+}
+
+// Article
+{
+	"_id": "ObjectId()",
+	"title": "string",
+	"article": "string"
+}
+
+// Users
+{
+	"_id": "ObjectId()",
+	"name": "string",
+	"surname": "string",
+	"password": "string",
+	"email": "string",
+	"cell": "string"
+}
