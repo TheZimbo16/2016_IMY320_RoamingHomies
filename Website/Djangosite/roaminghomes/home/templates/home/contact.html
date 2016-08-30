@@ -1,0 +1,22 @@
+{% extends 'home/index.html' %}
+
+{% block 'content' %}
+<h1>Questions?</h1>
+        <h2>Or just saying hello</h2>
+
+        <ul>
+            <li>info@roaminghomes.co.za</li>
+            <li>+27 83 555 1234</li>
+            <li>248 Default St. Johannesburg, Gauteng</li>
+        </ul>
+
+        <form action="" method="post">
+		{{ form.as_p }}
+		<form>
+            <input type="text" name="name" value="Name"><br/>
+            <input type="text" name="email" value="Your Email"><br/>
+            <textarea rows="4" cols="50">Message</textarea><br/>
+            <input type="submit" value="Send">
+			{% csrf_token %}
+		</form>
+{% endblock %}

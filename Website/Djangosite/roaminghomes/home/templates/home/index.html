@@ -1,0 +1,42 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<title>Roaming Homes - Landing Page</title>
+		<meta name="description" content="NPO IMY320 #django #python">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet" media="screen">
+		<link href="{% static "css/style.css" %}" rel="stylesheet" media="screen">
+
+	</head>
+	<body>
+		<header id="header">
+			<div id="menu">
+				<ul>
+					{% if request.user.is_authenticated %}
+					<li><a href="#">Welcome {{request.user.username}}</a></li>
+					<li><a href="/logout/">Log out</a></li>
+					{% else %}
+					<li><a href="/login/">Sign In</a></li>
+					<li><a href="/register/">Register</a></li>
+					{% endif %}
+					<li><a href="/events/">Show events</a></li>
+					<li><a href="/about/">About us</a></li>
+					<li><a href="/contact/">Contact us</a></li>
+					<li><a href="/calendar/">Calendar</a></li>
+				</ul>
+			</div>
+		</header>
+		<div class="content">
+			<div class="content box">
+				{% block 'content' %}
+				{% endblock %}
+			</div>
+		</div>
+		<footer id="footer">
+        </footer>
+	</body>
+</html>
