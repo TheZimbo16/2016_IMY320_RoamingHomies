@@ -6,6 +6,7 @@ from django.contrib.auth.models import User
 
 
 from .models import Event
+from .forms import UserCreationForm
 
 # Create your views here.
 def index(request):
@@ -28,7 +29,7 @@ def register(request):
 			return HttpResponseRedirect("/")
 	else:
 		form = UserCreationForm()
-	return render(request, "users/register.html", {'form': form,})
+	return render(request, "users/register.html", {'form': UserCreationForm,})
 	
 def list(request):
 	event_list = Event.objects.all().order_by('date');

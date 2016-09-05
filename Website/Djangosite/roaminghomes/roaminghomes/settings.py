@@ -79,10 +79,14 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'roamingdb',
         'USER': 'root',
-        'PASSWORD': 'toor',
+        'PASSWORD': '',
         'HOST': '',
     }
 }
+
+#Custom User. Change the line below to
+#AUTH_USER_MODEL = 'roaminghomes.CustomUser'
+AUTH_USER_MODEL = 'auth.User'
 
 
 # Password validation
@@ -109,7 +113,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'UTC+2'
 
 USE_I18N = True
 
