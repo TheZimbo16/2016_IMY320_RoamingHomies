@@ -3,46 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <title>Roaming Homes</title>
+	<link rel="stylesheet" href="style/bootstrap.css">
     <link rel="stylesheet" href="style/style.css">
+	 <link rel="stylesheet" href="style/nav.css">
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div name="headerDiv" class="headerContainer">
-        <div name="backBar" class="backBar">
-            <ul name="navOptions" class="navOptions">
-                <li class="navOption"><a href="#events">EVENTS</a></li>
-                <li class="navOption"><a href="#about">ABOUT</a></li>
-                <li class="navOption"><a href="#contact">CONTACT</a></li>
-                <li class="navOption">
-                    <a href="#">ACCOUNT</a>
-                    <ul>
-                        <li><a href="#login">Login</a></li>
-                        <li><a href="#register">Register</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
 
-        <div name="logoBox" class="logoBox">
-            <h1>ROAMING</h1>
-            <h1>HOMES</h1>
-        </div>
+  <!--Nav Screen, Start-->
+ <div id="myNav" class="overlay">
+  <!--Nav Screen, Content-->
+     <div class="overlay-content">
+       <a href="home.html">HOME</a>
+      <a href="events.html" class="underlined">EVENTS</a>
+     <a href="about.html" >ABOUT</a>
+     <a href="contact.html" >CONTACT</a>
+     </div>
+   <div class="menuFoot"><p>PROUDLY SOUTH AFRICAN! </p></div>
+ </div>
+ <!--Nav Screen, End-->
+
+ <!--Nav Bar, Start-->
+   <div name="headerDiv" class="headerContainer">
+       <div name="backBar" id="backBar" class="backBar">
+
+
+
+         <div name="logo" class="logo">
+           <a href="home.html"><img src="images/logo.png"/></a>
+
+         </div>
+
+         <div class="top">
+           <ul class="login">
+             <li> <a href="login.html">LOGIN</a></li>
+             <li> <a href="register.html">REGISTER</a></li>
+             <li> <button class="c-hamburger c-hamburger--htx" >
+             <span>toggle menu</span>
+           </button></li>
+
+         </ul>
+         </div>
+       </div>
+
+
+   </div>
+ <!--Nav Bar, End-->
+	<!--Body Block, Start-->
+	<div class="about1 col-md-12">
+    <div class="bodyBlock col-md-10 col-md-offset-1">
+		<div class="bodyHead col-md-7 col-md-offset-3">
+			<h1> LOGIN</h1>
+		</div>
+
+	<div class= "homeContent col-md-8 col-md-offset-2 ">
+		    <div class= " col-md-12 ">
+          <br/><br/>
+            <div class="contact col-md-8 col-md-offset-2 ">
+            <form action="php/login.php">
+                <input type="email" name="email" placeholder="Email"><br/>
+                <input type="password" name="password" placeholder="Password"><br/>
+
+                <input type="submit" name="name" class="send" value="Login">
+                <br/>
+                <p>  <br/>Need an account? <a href="register.html">Register<a><p>
+            </form>
+            </div>
+
+
+					<br/>
+      </div>
     </div>
-    <div name="pageBodyDiv" class="pageBodyContainer">
-        <div name="heroImage" class="heroImage"
-            style="background-color:#b73434; height: 100%; padding-top: 200px; background-image:url(style/71H2.jpg);">
-                <div class="loginBox" style="margin-top:200px;">
-                    <form action="" class="loginForm">
-                        <input type="text" placeholder="username" style="min-width:255px"/><br/>
-                        <input type="password" placeholder="password" style="min-width:255px"/><br/>
-                        <button type="submit" style="border:none; color: white; background-color: black; font-size: 24px; font-family: Nanami Black; padding-left:15px; padding-right:15px; padding-top:5px; padding-bottom:5px; float:right; margin-top:60px;">LOGIN</button>
-                    </form>
-                </div>
-                <div style="max-width: 455px; margin: 0 auto; margin-top: -250px">
-                    <div style="background-color: black; max-width: 435px; padding-left: 25px; padding-top:5px; padding-bottom: 5px; margin-left: -45px"> 
-                        <span style="font-family:Nanami-Black; font-size:25px; color:white">WELCOME BACK TO THE MOVEMENT</span>
-                    </div>    
-                </div>
-        </div>
-    </div>
+	</div>
+	</div>
+
+	</div>
+	<script src="script/script.js"></script>
 </body>
 </html>

@@ -1,152 +1,291 @@
-body {
-    margin: 0;
-    padding: 0;
-    min-width: 960px;
+body{
+	background-image: url('bg.jpg');
+	 background-color: #cccccc;
+	 background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center;
+		margin-bottom: 10%;
+	background-size: 100vw;
+}
+.about1{
+	 background-image: url('about1.jpg');
+	 background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center;
+	background-size: 1980;
+	min-height:100vh;
+	padding-bottom: 10%;
+}
+
+input{
+		width: 90%;
+		padding-left: 10px;
+	  border: none;
+		background-color: #f6f6f6;
+		height: 50px;
+		box-shadow: 0px 1px 3px #777777;
+		overflow: hidden;
+		margin: 5px;
+
+		padding-right: 10px;
+}
+textarea{
+		width: 90%;
+		padding: 10px;
+	  border: none;
+		background-color: #f6f6f6;
+
+		box-shadow: 0px 1px 3px #777777;
+		overflow: hidden;
+		margin: 5px;
+}
+.about2{
+	padding-top: 100px;
+	border-top: white solid 1px;
+	 background-image: url('about2.jpg');
+	 background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center;
+	background-size: 2000px;
+	min-height:100vh;
+	padding-bottom: 10%;
+}
+
+.about3{
+	padding-top: 100px;
+	border-top: white solid 1px;
+	 background-image: url('about3.jpg');
+	 background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center;
+	background-size: 2000px;
+	min-height:100vh;
+
+	padding-bottom: 10%;
+}
+
+
+.bodyBlock{
+	padding-top: 120px;
+
+
+}
+.lowerLine{
+	line-height: -3;
+
+
+}
+.bodyHead{
+	font-family: 'Nanami-Black';
+	color: rgba(250,250,250,0.8);
+	text-align: right;
+
+	margin-bottom:-2.4rem;
+	padding-bottom:0;
+}
+
+.homeHead{
+	font-family: 'Nanami-Black';
+
+	color: rgba(250,250,250,0.8);
+	text-align: right;
+	padding-top: 100px;
+	margin-bottom:-2.4rem;
+	padding-bottom:0;
+}
+.homeHead h1{
+	font-size: 8rem;
+}
+.bodyHead h1{
+	font-size: 8rem;
+}
+.homeContent{
+	padding-top: 5px;
+	padding-bottom: 30px;
+	margin-bottom: 100px;
+	font-family: 'Montserrat-Light';
+	background-color: rgba(250,250,250,0.8);
+	font-size: 1.5rem;
+}
+.bodyContent{
+	padding-left:5%;
+	padding-right:5%;
+	padding-top: 1%;
+	padding-bottom: 40px;
+	font-family: 'Montserrat-Light';
+	background-color: rgba(250,250,250,0.8);
+	font-size: 1.5rem;
+}
+h2{
+	font-family: 'RobotoSlab-Bold';
+	font-size: 2rem;
+}
+.no-padding{
+	padding: 0;
+}
+.partner img{
+	width: 200px;
+
+	margin: auto;
+	display: block;
+	overflow: hidden;
+
+	-webkit-transition: all 0.6s ease;
+     -moz-transition: all 0.6s ease;
+       -o-transition: all 0.6s ease;
+      -ms-transition: all 0.6s ease;
+          transition: all 0.6s ease;
+}
+
+.partner {
+		margin-bottom: 5rem;
+	  margin-bottom: 40px;
+	  overflow: hidden;
+
+}
+.roboto{
+	font-family: 'RobotoSlab-Bold';
+}
+.icon {
+	  padding-bottom: 15px;
+}
+.icon img{
+	display: block;
+	 margin-left: auto;
+	 margin-right: auto;
+	 max-width: 60px;
+	 max-height: 60px;
+}
+.iconText{
+		text-align: center;
+}
+.team {
+	padding-top: 2rem;
+	 text-align: center;
 
 }
 
-.pageBodyContainer {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-height: 100vh;
-    max-width: 100vw;
-    overflow-y: auto;
-    overflow-x: hidden;
-    background-color: lightslategrey;
-    z-index: 0;
-    top: 0;
-    left: 0;
+.leftBorder{
+	border-left: 1px #bbb solid;
+}
+.rightBorder{
+	border-right: 1px #666 solid;
+	padding-right: 0px !important	;
 }
 
-.headerContainer {
-    position: absolute;
-    overflow: hidden;
-    z-index: 10;
-    top: 0;
-    left: 45px;
-    right: 45px;
+.title{
+	color: #666;
+	font-family: 'RobotoSlab-Bold';
+	font-size: 1.5rem;
+	margin-top:-1%;
+	margin-bottom:-1%;
+}
+.send{
+		background-color: rgba(50, 50, 50, 0.0);
+		color: rgba(50, 50, 50, 1);
+		border: 1px solid #666 ;
+		-webkit-transition: all 0.6s ease;
+			 -moz-transition: all 0.6s ease;
+				 -o-transition: all 0.6s ease;
+				-ms-transition: all 0.6s ease;
+						transition: all 0.6s ease;
+}
+.send:hover {
+		box-shadow: 0px 0px 10px #333;
+		background-color: rgba(50, 50, 50, 0.9);
+		color: rgba(250, 250, 250, 0.9);
+		-webkit-transition: all 0.6s ease;
+			 -moz-transition: all 0.6s ease;
+				 -o-transition: all 0.6s ease;
+				-ms-transition: all 0.6s ease;
+						transition: all 0.6s ease;
+}
+.send:active {
+
+	border: none ;
+		box-shadow: 0px 0px 1px #777777;
+		background-color: rgba(255, 255, 255, 1);
+		color: rgba(50, 50, 50, 0.9);
+		-webkit-transition: all 0.1s ease;
+			 -moz-transition: all 0.1s ease;
+				 -o-transition: all 0.1s ease;
+				-ms-transition: all 0.1s ease;
+						transition: all 0.1s ease;
+}
+textarea:focus{
+	box-shadow: 0px 0px 10px #666;
+	-webkit-transition: all 0.3s ease;
+		 -moz-transition: all 0.3s ease;
+			 -o-transition: all 0.3s ease;
+			-ms-transition: all 0.3s ease;
+					transition: all 0.3s ease;
+}
+input:focus{
+	box-shadow: 0px 0px 10px #666;
+	-webkit-transition: all 0.3s ease;
+		 -moz-transition: all 0.3s ease;
+			 -o-transition: all 0.3s ease;
+			-ms-transition: all 0.3s ease;
+					transition: all 0.3s ease;
+}
+.subtitle{
+	color: #999;
+	font-family: 'Montserrat-Light';
+	font-size: 1.5rem;
+	margin-top:-1%;
+	margin-bottom:-1%;
+}
+.time{
+	font-family: 'Montserrat-Light';
+	font-size: 1rem;
+	padding-top: 1%;
+	padding-bottom: 5%;
+	text-align:right;
 }
 
-.backBar {
-    margin-top: 30px;
-    background-color: white;
-    min-height: 56px;
+
+/* NEWS */
+.news{
+	padding-top: 5%;
+}
+.newsBlock{
+	background-color: #f6f6f6;
+	padding-top: 5%;
+	box-shadow: 0px 1px 2px #777777;
+	margin-bottom:2%;
 }
 
-ul.navOptions, .navOptions ul {
-    list-style-type: none;
+
+.newsContent{
+	font-size: 1.2rem;
 }
 
-.navOptions {
-    float: right;
+/* ANNOUNCEMENTS */
+.Announcements{
+	padding-top: 5%;
+}
+.announcementBlock{
+	background-color: #f6f6f6;
+	padding-top: 5%;
+	box-shadow: 0px 1px 2px #777777;
+	margin-bottom:2%;
 }
 
-.navOption {
-    float: left;
-    display: block;
-    font-family: 'Nanami-Extralight';
-    margin-left: 25px;
-    margin-top: 2px;
+
+.anounceContent{
+	font-size: 1.2rem;
 }
 
-li.accountOption div {
-    display: block;
-    background-color: dodgerblue;
-}
-
-.navOption a {
-    text-decoration: none;
-    color: black;
-    opacity: 0.8;
-    font-size: large;
-}
-
-.logoBox {
-    background: black;
-    min-height: 95px;
-    max-width: 165px;
-    margin-left: 50px;
-    margin-top: -70px;
-    padding-top: 90px;
-    padding-left: 22px;
-}
-
-.logoBox h1 {
-    color: white;
-    font-family: "Nanami-Black";
-    margin: 0;
-    margin-bottom: -10px;
-}
-
-.heroImage {
-    min-height: 650px;
-    background-size: cover;
-}
-
-.contentSection {
-    background-color: white;
-    min-height: 350px;
-    padding-top: 15px;
-}
-
-.sectionHeading {
-    font-family: "California-Sans";
-    font-size: 65px;
-    color: #89924a;
-    margin-top: 30px;
-    margin-bottom: 45px;
-
-}
-
-.headingContainer {
-    max-width: 476px;
-    margin: 0 auto;
-}
-
-.contentSection p {
-    font-family: "Nanami-Extralight";
-    opacity: 0.7;
-    font-size: 24px;
-    margin-left: 80px;
-    margin-right: 80px; 
-}
-
-.loginBox {
-    background-color: white;
-    min-width: 320px;
-    max-width: 320px;
-    max-height: 200px;
-    min-height: 200px;
-    margin: auto;
-    padding-top: 30px;
-    margin-top: 110px;
-}
-
-.loginForm input {
-    background: transparent;
-    border: none;
-    font-family: "Nanami-Extralight";
-    color: rgba(1,1,1,0.7);
-    border-bottom: solid 1px grey;
-    font-size: 24px;
-    margin-bottom: 15px;
-}
-
-.loginForm {
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-top: 30px;
-}
 
 *:focus {
     outline: none;
 }
 
+
 @font-face {
-	font-family: 'Nanami-Extralight';
-	src: url('fonts/nanami/Nanami-ExtraLight.otf') format('opentype');
-	font-weight: 200;
+	font-family: 'Montserrat-Light';
+	src: url('fonts/montserrat/Montserrat-Light.otf') format('opentype');
+	font-weight: 100;
 	font-style: normal;
 }
 
@@ -160,6 +299,12 @@ li.accountOption div {
 @font-face {
 	font-family: 'California-Sans';
 	src: url('fonts/california/California Sans.ttf') format('truetype');
+	font-weight: 200;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'RobotoSlab-Bold';
+	src: url('fonts/roboto/RobotoSlab-Bold.ttf') format('truetype');
 	font-weight: 200;
 	font-style: normal;
 }
