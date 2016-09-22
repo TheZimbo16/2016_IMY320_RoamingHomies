@@ -1,79 +1,144 @@
-.scroll{
-  padding-top: 300px;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Roaming Homes</title>
+	<link rel="stylesheet" href="style/bootstrap.css">
+    <link rel="stylesheet" href="style/style.css">
 
-}
-.scroll a {
- vertical-align: text-bottom;
-	position: relative;
-	bottom: ;
-	left: 50%;
-	z-index: 3;
-	display: inline-block;
-	-webkit-transform: translate(0, -50%);
-	transform: translate(0, -50%);
-	color: #fff;
-	font : normal 400 20px/1 'Josefin Sans', sans-serif;
-	letter-spacing: .1em;
-	text-decoration: none;
-	transition: opacity .3s;
-}
-.scroll a:hover {
-	opacity: .5;
-}
+      <link rel="stylesheet" href="style/scroll.css">
+	 <link rel="stylesheet" href="style/nav.css">
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
 
 
-.scroll a {
-	padding-top: 80px;
-}
-.scroll a span {
-	position: absolute;
-	top: 0;
-	left: 35%;
-	width: 40px;
-	height: 40px;
-	margin-left: -18px;
-	border-left: 2px solid #fff;
-	border-bottom: 2px solid #fff;
-	-webkit-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-	-webkit-animation: sdb07 2s infinite;
-	animation: sdb07 2s infinite;
-	opacity: 0;
-	box-sizing: border-box;
-}
-.scroll a span:nth-of-type(1) {
-	-webkit-animation-delay: 0s;
-	animation-delay: 0s;
-}
-.scroll a span:nth-of-type(2) {
-	top: 16px;
-	-webkit-animation-delay: .15s;
-	animation-delay: .15s;
-}
-.scroll a span:nth-of-type(3) {
-	top: 32px;
-	-webkit-animation-delay: .3s;
-	animation-delay: .3s;
-}
-@-webkit-keyframes sdb07 {
-	0% {
-		opacity: 0;
-	}
-	50% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-	}
-}
-@keyframes sdb07 {
-	0% {
-		opacity: 0;
-	}
-	50% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-	}
-}
+	 <!--Nav Screen, Start-->
+	<div id="myNav" class="overlay">
+	 <!--Nav Screen, Content-->
+		  <div class="overlay-content">
+		    <a href="home.html">HOME</a>
+		   <a href="events.html">EVENTS</a>
+			<a href="about.html" class="underlined">ABOUT</a>
+			<a href="contact.html">CONTACT</a>
+		  </div>
+		<div class="menuFoot"><p>PROUDLY SOUTH AFRICAN! </p></div>
+	</div>
+	<!--Nav Screen, End-->
+
+	<!--Nav Bar, Start-->
+    <div name="headerDiv" class="headerContainer">
+        <div name="backBar" id="backBar" class="backBar">
+
+
+
+    			<div name="logo" class="logo">
+    				<a href="home.html"><img src="images/logo.png"/></a>
+
+    			</div>
+
+    			<div class="top">
+            <ul class="login">
+            	<li> <a href="login.html">LOGIN</a></li>
+              <li> <a href="register.html">REGISTER</a></li>
+    					<li> <button class="c-hamburger c-hamburger--htx" >
+    				  <span>toggle menu</span>
+    				</button></li>
+
+          </ul>
+    			</div>
+        </div>
+
+
+    </div>
+	<!--Nav Bar, End-->
+	<!--Body Block, Start-->
+	<div class="about1 col-md-12">
+    <div class="bodyBlock col-md-11 col-md-offset-1">
+		<div class="bodyHead col-md-7 col-md-offset-3">
+			<h1> ABOUT US</h1>
+		</div>
+
+		<div class= "homeContent col-md-7 col-md-offset-3">
+		<div class= " col-md-12 ">
+                <h2 class="sectionHeading">OUR STORY</h2>
+				 <p> Roaming Homes is a <strong>Proudly South African</strong> Non-Profit Organisation.
+					We offer shelter, food and clothes to those in need through our collection of several
+					repurposed city buses. These are thoroughly equipped for their purpose, providing bunk beds
+					and ablution facilities and offering South Africans in need a
+					safe place to sleep and wash up, as well as receive a meal.
+					<br/><br/>
+
+					Roaming homes relies on the donations and help of the community. As a NPO we are always
+					in need of volunteers and donations in the form of clothes, tinned foods, bedding,
+					toiletries and monetary donations.</p>
+					<br/>
+
+    </div>
+  </div>
+  <div class="scroll col-md-12">
+     <a href="#about2" ><span></span><span></span><span></span></a>
+   </div>
+	</div>
+	</div>
+	<div class="about2 col-md-12 " id="about2"name="about2">
+	<div class="bodyHead col-md-9 col-md-offset-2">
+			<h1>SPONSORS & PARTNERS</h1>
+		</div>
+	<div class= "bodyContent col-md-10 col-md-offset-1">
+		  <h2 class="sectionHeading"></h2>
+		  <br/><br/>
+		 <div class="col-md-3 partner">
+			<img src="images/sponsor1.jpg">
+		 </div>
+		 <div class="col-md-3 partner">
+			    <img src="images/sponsor2.jpg" >
+		 </div>
+		  <div class="col-md-3 partner">
+			     <img src="images/sponsor3.jpg">
+		 </div>
+		  <div class="col-md-3   partner">
+			   <img src="images/sponsor4.jpg">
+		 </div>
+	</div>
+  <div class="scroll col-md-12">
+     <a href="#about3" ><span></span><span></span><span></span></a>
+   </div>
+	</div>
+
+  <div class="about3 col-md-12 " id="about3"name="about3s">
+  <div class="bodyHead col-md-9 col-md-offset-2">
+      <h1>THE TEAM</h1>
+    </div>
+  <div class= "bodyContent col-md-10 col-md-offset-1">
+      <h2 class="sectionHeading"></h2>
+      <br/><br/>
+     <div class="col-md-3 partner">
+      <img src="images/team1.jpg">
+      <div class="team"><span class="roboto">Derick Sonders </span><br>CEO</div>
+     </div>
+     <div class="col-md-3 partner">
+          <img src="images/team2.jpg" >
+          <div class="team"><span class="roboto">Dave Grace </span><br>CFO</div>
+     </div>
+      <div class="col-md-3 partner">
+           <img src="images/team7.jpg">
+           <div class="team"><span class="roboto">Ashlley Brooke </span><br>COO</div>
+     </div>
+      <div class="col-md-3 partner">
+         <img src="images/team8.jpg">
+         <div class="team"><span class="roboto">Jessica Grace </span><br>BUS DRIVER</div>
+     </div>
+  </div>
+
+  </div>
+
+
+	</div>
+  <script src="script/script.js"></script>
+	<script src="script/jquery-3.1.0.min.js"></script>
+
+	<script src="script/scroll.js"></script>
+</body>
+</html>
