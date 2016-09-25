@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style/nav.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="script/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="script/jq.js"></script>
 </head>
 <body>
 
@@ -15,10 +17,10 @@
 <div id="myNav" class="overlay">
     <!--Nav Screen, Content-->
     <div class="overlay-content">
-        <a href="home.html">HOME</a>
-        <a href="events.html" class="underlined">EVENTS</a>
-        <a href="about.html">ABOUT</a>
-        <a href="contact.html">CONTACT</a>
+        <a href="home.html" class="hover3 texthover">HOME</a>
+        <a href="events.html" class="underlined hover texthover">EVENTS</a>
+        <a href="about.html" class="hover2 texthover">ABOUT</a>
+        <a href="contact.html" class="hover4 texthover">CONTACT</a>
     </div>
     <div class="menuFoot"><p>PROUDLY SOUTH AFRICAN! </p></div>
 </div>
@@ -39,7 +41,7 @@
                 <li><a href="login.html">LOGIN</a></li>
                 <li><a href="register.html">REGISTER</a></li>
                 <li>
-                    <button class="c-hamburger c-hamburger--htx">
+                    <button class="c-hamburger c-hamburger--htx hover">
                         <span>toggle menu</span>
                     </button>
                 </li>
@@ -55,13 +57,13 @@
 <div class="about1 col-xs-12">
     <div class="bodyBlock col-xs-10 col-xs-offset-1">
         <div class="bodyHead col-xs-7 col-xs-offset-3">
-            <h1> LOGIN</h1>
+            <h1 class="texthover">REGISTER</h1>
         </div>
 
-        <div class="homeContent col-xs-8 col-xs-offset-2 ">
-            <div class=" col-xs-12 ">
+        <div class="homeContent col-xs-8 col-xs-offset-2">
+            <div class="col-xs-12">
                 <br/><br/>
-                <div class="contact col-xs-8 col-xs-offset-2 ">
+                <div class="contact col-xs-8 col-xs-offset-2">
                     <form action="php/login.php">
 
                         <input type="text" name="fname" placeholder="First Name"><br/>

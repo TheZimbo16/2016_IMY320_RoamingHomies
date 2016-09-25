@@ -5,6 +5,7 @@
 $(document).ready(function()
 {
     $ogBGhoversColor = $(".hover, .hover2, .hover3, .hover4").css("background-color");
+    $ogTexthoversColor = $(".texthover").css("color");
 
 
     $(".hover").mouseover(function()
@@ -30,6 +31,17 @@ $(document).ready(function()
     $(".hover, .hover2, .hover3, .hover4").mouseout(function()
     {
        $(this).css("background-color", $ogBGhoversColor);
+    });
+
+    $(".texthover").mouseover(function()
+    {
+        $ogTexthoversColor = $(this).css("color");
+        $(this).css("color", "rgba(0, 0, 0, 0.4)");
+    });
+
+    $(".texthover").mouseout(function()
+    {
+        $(this).css("color", $ogTexthoversColor);
     });
 
 });
