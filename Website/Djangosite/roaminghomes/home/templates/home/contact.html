@@ -1,0 +1,48 @@
+{% extends 'home/base.html' %}
+{% load staticfiles %}
+{% block 'content' %}
+
+
+
+    <!--Body Block, Start-->
+    <div class="about1 col-md-12">
+    <div class="bodyBlock col-md-10 col-md-offset-1">
+        <div class="bodyHead col-md-7 col-md-offset-3">
+            <h1> QUESTIONS?</h1>
+        </div>
+
+    <div class= "homeContent col-md-12 ">
+            <div class= " col-md-12 ">
+          <br/><br/>
+            <div class="contact col-md-6 col-md-offset-1">
+            <form>
+                <input type="text" name="name" placeholder="Full Name"><br/>
+                <input type="email" name="email" placeholder="Your Email"><br/>
+                <textarea rows="7" cols="50" placeholder="Message"></textarea><br/>
+                <input type="submit" name="name" class="send" value="SEND">
+            </form>
+            </div>
+            <div class="contact col-md-4">
+              <div class="col-md-12 icon">
+                  <img src="{% static "images/message.png" %}"><br>
+                 <div class="roboto iconText col-md-12 icon">hello@roaminghomes.co.za</div>
+             </div>
+             <div class="col-md-12 icon">
+                <img src="{% static "images/phone.png" %}"><br>
+                <div class="roboto iconText col-md-12 icon">+27 72 123 1234</div>
+            </div>
+            <div class="col-md-12 icon">
+                <img src="{% static "images/location.png" %}"><br>
+               <div class="roboto iconText col-md-12 icon">24 Madeup Str Pretoria</div>
+           </div>
+            </div>
+
+                    <br/>
+      </div>
+    </div>
+    </div>
+    </div>
+
+    </div>
+
+{% endblock %}

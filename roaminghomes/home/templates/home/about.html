@@ -1,0 +1,94 @@
+{% extends 'home/base.html' %}
+{% load staticfiles %}
+{% block 'content' %}
+
+
+
+
+
+
+
+    <!--Body Block, Start-->
+    <div class="about1 col-sm-12">
+    <div class="bodyBlock col-sm-11 col-sm-offset-1">
+        <div class="bodyHead col-sm-7 col-sm-offset-3">
+            <h1> ABOUT US</h1>
+        </div>
+
+        <div class= "homeContent col-sm-7 col-sm-offset-3">
+        <div class= " col-sm-12 ">
+                <h2 class="sectionHeading">OUR STORY</h2>
+                 <p> Roaming Homes is a <strong>Proudly South African</strong> Non-Profit Organisation.
+                    We offer shelter, food and clothes to those in need through our collection of several
+                    repurposed city buses. These are thoroughly equipped for their purpose, providing bunk beds
+                    and ablution facilities and offering South Africans in need a
+                    safe place to sleep and wash up, as well as receive a meal.
+                    <br/><br/>
+
+                    Roaming homes relies on the donations and help of the community. As a NPO we are always
+                    in need of volunteers and donations in the form of clothes, tinned foods, bedding,
+                    toiletries and monetary donations.</p>
+                    <br/>
+
+    </div>
+  </div>
+  <div class="scroll col-sm-12">
+     <a href="#about2" ><span></span><span></span><span></span></a>
+   </div>
+    </div>
+    </div>
+    <div class="about2 col-sm-12 " id="about2"name="about2">
+    <div class="bodyHead col-sm-9 col-sm-offset-2">
+            <h1>SPONSORS & PARTNERS</h1>
+        </div>
+    <div class= "bodyContent col-sm-10 col-sm-offset-1">
+          <h2 class="sectionHeading"></h2>
+          <br/><br/>
+         <div class="col-sm-3 partner">
+            <img src="{% static "images/sponsor1.jpg" %}">
+         </div>
+         <div class="col-sm-3 partner">
+                <img src="{% static "images/sponsor2.jpg" %}">
+         </div>
+          <div class="col-sm-3 partner">
+                 <img src="{% static "images/sponsor3.jpg" %}">
+         </div>
+          <div class="col-sm-3   partner">
+               <img src="{% static "images/sponsor4.jpg" %}">
+         </div>
+    </div>
+  <div class="scroll col-sm-12">
+     <a href="#about3" ><span></span><span></span><span></span></a>
+   </div>
+    </div>
+
+  <div class="about3 col-sm-12 " id="about3"name="about3s">
+  <div class="bodyHead col-sm-9 col-sm-offset-2">
+      <h1>THE TEAM</h1>
+    </div>
+  <div class= "bodyContent col-sm-10 col-sm-offset-1">
+      <h2 class="sectionHeading"></h2>
+      <br/><br/>
+     <div class="col-sm-3 partner">
+      <img src="{% static "images/team1.jpg" %}">
+      <div class="team"><span class="roboto">Derick Sonders </span><br>CEO</div>
+     </div>
+     <div class="col-sm-3 partner">
+          <img src="{% static "images/team2.jpg" %}">
+          <div class="team"><span class="roboto">Dave Grace </span><br>CFO</div>
+     </div>
+      <div class="col-sm-3 partner">
+           <img src="{% static "images/team7.jpg" %}">
+           <div class="team"><span class="roboto">Ashlley Brooke </span><br>COO</div>
+     </div>
+      <div class="col-sm-3 partner">
+         <img src="{% static "images/team8.jpg" %}">
+         <div class="team"><span class="roboto">Jessica Grace </span><br>BUS DRIVER</div>
+     </div>
+  </div>
+
+  </div>
+
+
+    </div>
+{% endblock %}

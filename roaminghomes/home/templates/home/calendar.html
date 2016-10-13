@@ -1,0 +1,51 @@
+{% extends 'home/base.html' %}
+
+{% block 'content' %}
+     <!--Nav Screen, Start-->
+    <div id="myNav" class="overlay">
+     <!--Nav Screen, Content-->
+          <div class="overlay-content">
+            <a href="index.html">HOME</a>
+           <a href="/events_list/">EVENTS</a>
+            <a href="/about/" class="underlined">ABOUT</a>
+            <a href="/contact/">CONTACT</a>
+          </div>
+        <div class="menuFoot"><p>PROUDLY SOUTH AFRICAN! </p></div>
+    </div>
+    <!--Nav Screen, End-->
+
+<div name="headerDiv" class="headerContainer">
+    <div name="backBar" id="backBar" class="backBar">
+
+
+
+            <div name="logo" class="logo">
+                <a href="home.html"><img src="{% static "images/logo.png" %}"/></a>
+
+            </div>
+
+          <div class="top">
+                <ul class="login">
+                  {% if request.user.is_authenticated %}
+                      <li><a href="{% url 'event_add' %}">Create Event</a></li>
+                    <li><a href="/logout/">Log out</a></li>
+                  {% else %}
+                    <li> <a href="/login/">LOGIN</a></li>
+                    <li> <a href="/register/">REGISTER</a></li>
+                  {% endif %}
+
+                      <li>
+                         <button class="c-hamburger c-hamburger--htx" >
+                          <span>toggle menu</span>
+                        </button>
+                      </li>
+
+              </ul>
+            </div>
+    </div>
+
+
+</div>
+<h1>Calendar</h1>
+<iframe src="https://calendar.google.com/calendar/embed?src=1lms34tto2koargucg7s7s3o2g%40group.calendar.google.com&ctz=Africa/Johannesburg" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+{% endblock %}

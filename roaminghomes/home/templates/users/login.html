@@ -1,0 +1,32 @@
+{% extends 'home/base.html' %}
+{% load staticfiles %}
+{% block 'content' %}
+
+<div class="about1 col-md-12">
+	<div class="bodyBlock col-md-10 col-md-offset-1">
+	<div class="bodyHead col-md-7 col-md-offset-3">
+		<h1> LOGIN</h1>
+	</div>
+
+<div class= "homeContent col-md-8 col-md-offset-2 ">
+			<div class= " col-md-12 ">
+				<br/><br/>
+					<div class="contact col-md-8 col-md-offset-2 ">
+						<form action="" method="post">
+							{{ form.as_p }}
+
+							<input type="submit" name="name" class="send" value="Login">
+								{% csrf_token %}
+							<br/>
+							<p>  <br/>Need an account? <a href="/register/">Register<a><p>
+					</form>
+					</div>
+
+
+				<br/>
+		</div>
+	</div>
+</div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,80 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Roaming Homes</title>
+		<meta name="description" content="NPO IMY320 #django #python">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet" media="screen">
+		<link href="{% static "css/style.css" %}" rel="stylesheet" media="screen">
+		<link href="{% static "css/scroll.css" %}" rel="stylesheet" media="screen">
+		<link href="{% static "css/nav.css" %}" rel="stylesheet" media="screen">
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
+
+</head>
+<body>
+<div id="myNav" class="overlay">
+     <!--Nav Screen, Content-->
+          <div class="overlay-content">
+            <a href="{% url 'index' %}">HOME</a>
+           <a href="/events/">EVENTS</a>
+            <a href="/about/" class="underlined">ABOUT</a>
+            <a href="/contact/">CONTACT</a>
+			<a href="/uploads/">UPLOADS</a>
+          </div>
+        <div class="menuFoot"><p>PROUDLY SOUTH AFRICAN! </p></div>
+    </div>
+	<div name="headerDiv" class="headerContainer">
+    <div name="backBar" id="backBar" class="backBar">
+
+
+
+            <div name="logo" class="logo">
+                <a href="{% url 'index' %}"><img src="{% static "images/logo.png" %}"/></a>
+
+            </div>
+
+          <div class="top">
+                <ul class="login">
+                  {% if request.user.is_authenticated %}
+					{% if request.user.is_superuser %}
+					<li><a href="{% url 'upload' %}">Upload File</a></li>
+					{% endif %}
+                      <li><a href="{% url 'event_add' %}">Create Event</a></li>
+                    <li><a href="/logout/">Log out</a></li>
+                  {% else %}
+                    <li> <a href="/login/">LOGIN</a></li>
+                    <li> <a href="/register/">REGISTER</a></li>
+                  {% endif %}
+
+                      <li>
+                         <button class="c-hamburger c-hamburger--htx" >
+                          <span>toggle menu</span>
+                        </button>
+                      </li>
+
+              </ul>
+            </div>
+    </div>
+
+
+</div>
+	<div class="content">
+			<div class="content box">
+				{% block 'content' %}
+				{% endblock %}
+			</div>
+		</div>
+
+<script src="{% static "script.js" %}"></script>
+	<script src="{% static "jquery-3.1.0.min.js" %}"></script>
+	<script src="{% static "scroll.js" %}"></script>
+  <script src="{% static "jq.js" %}"></script>
+</body>
+</html>

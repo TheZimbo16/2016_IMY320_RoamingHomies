@@ -1,0 +1,80 @@
+{% extends 'home/index.html' %}
+{% load staticfiles %}
+{% block 'content' %}
+<!--Body Block, Start-->
+     <!--Nav Screen, Start-->
+    <div id="myNav" class="overlay">
+     <!--Nav Screen, Content-->
+          <div class="overlay-content">
+            <a href="index.html">HOME</a>
+           <a href="/events_list/">EVENTS</a>
+            <a href="/about/" class="underlined">ABOUT</a>
+            <a href="/contact/">CONTACT</a>
+          </div>
+        <div class="menuFoot"><p>PROUDLY SOUTH AFRICAN! </p></div>
+    </div>
+    <!--Nav Screen, End-->
+
+<div name="headerDiv" class="headerContainer">
+    <div name="backBar" id="backBar" class="backBar">
+
+
+
+            <div name="logo" class="logo">
+                <a href="home.html"><img src="{% static "images/logo.png" %}"/></a>
+
+            </div>
+
+          <div class="top">
+                <ul class="login">
+                  {% if request.user.is_authenticated %}
+                      <li><a href="{% url 'event_add' %}">Create Event</a></li>
+                    <li><a href="/logout/">Log out</a></li>
+                  {% else %}
+                    <li> <a href="/login/">LOGIN</a></li>
+                    <li> <a href="/register/">REGISTER</a></li>
+                  {% endif %}
+
+                      <li>
+                         <button class="c-hamburger c-hamburger--htx" >
+                          <span>toggle menu</span>
+                        </button>
+                      </li>
+
+              </ul>
+            </div>
+    </div>
+
+
+</div>
+<div class="about1 col-md-12">
+	<div class="bodyBlock col-md-10 col-md-offset-1">
+	<div class="bodyHead col-md-7 col-md-offset-3">
+		<h1>REGISTER</h1>
+	</div>
+
+<div class= "homeContent col-md-8 col-md-offset-2 ">
+			<div class= " col-md-12 ">
+				<br/><br/>
+					<div class="contact col-md-8 col-md-offset-2 ">
+
+
+
+						<form action="" method="post">
+							{{ form.as_p }}
+
+							<input type="submit" name="register" class="send" value="Register">
+							{% csrf_token %}
+							<br/>
+							<p>  <br/>Already have an account? <a href="/login/">Login<a><p>
+					</form>
+					</div>
+
+
+				<br/>
+		</div>
+	</div>
+</div>
+</div>
+
+{% endblock %}
