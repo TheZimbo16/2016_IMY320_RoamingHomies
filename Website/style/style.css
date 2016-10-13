@@ -64,6 +64,19 @@ textarea{
 	padding-bottom: 10%;
 }
 
+.about4{
+	padding-top: 100px;
+	border-top: white solid 1px;
+	 background-image: url('about4.jpg');
+	 background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center;
+	background-size: 2000px;
+	min-height:100vh;
+
+	padding-bottom: 10%;
+}
+
 
 .bodyBlock{
 	padding-top: 120px;
@@ -118,7 +131,7 @@ textarea{
 }
 h2{
 	font-family: 'RobotoSlab-Bold';
-	font-size: 2rem;
+	font-size: 3rem;
 }
 .no-padding{
 	padding: 0;
