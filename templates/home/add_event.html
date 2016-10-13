@@ -1,0 +1,102 @@
+{% extends 'home/index.html' %}
+
+{% block 'content' %}
+<h1>Create New Event</h1>
+
+<form action="" method="post">
+	{{ form.as_p }}
+	<input type="submit" value="Create Event">
+	{% csrf_token %}
+</form>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Roaming Homes</title>
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="script/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="script/jq.js"></script>
+
+
+</head>
+<body>
+
+
+<!--Nav Screen, Start-->
+<div id="myNav" class="overlay">
+    <!--Nav Screen, Content-->
+    <div class="overlay-content">
+        <a href="home.html" class="underlined hover">HOME</a>
+        <a class="hover2" href="events.html">EVENTS</a>
+        <a class="hover3" href="about.html">ABOUT</a>
+        <a class="hover4" href="contact.html">CONTACT</a>
+    </div>
+    <div class="menuFoot"><p>PROUDLY SOUTH AFRICAN! </p></div>
+</div>
+<!--Nav Screen, End-->
+
+
+<!--Body Block, Start-->
+<div class="about1 col-xs-12">
+    <div class="bodyBlock col-xs-10 col-xs-offset-1">
+        <div class="bodyHead col-xs-7 col-xs-offset-3">
+            <h1> CREATE AN EVENT</h1>
+        </div>
+
+        <div class="homeContent col-xs-12 ">
+            <div class=" col-xs-12 ">
+                <br/><br/>
+                <div class="contact col-xs-6 col-xs-offset-3">
+                    <form>
+                        <input type="text" name="title" placeholder="Event Title"><br/>
+                        <input type="date" name="date" placeholder=""><br/>
+                        <input type="text" name="venue" placeholder="Event Location"><br/>
+                        <textarea rows="7" cols="50" placeholder="Description"></textarea><br/>
+                        <input type="submit" name="name" class="send" value="CREATE">
+                    </form>
+                </div>
+                <!-- <div class="contact col-xs-4">
+                  <div class="col-xs-12 icon">
+                     <img src="images/message.png"><br>
+                     <div class="roboto iconText col-xs-12 icon">hello@roaminghomes.co.za</div>
+                 </div>
+                 <div class="col-xs-12 icon">
+                    <img src="images/phone.png"><br>
+                    <div class="roboto iconText col-xs-12 icon">+27 72 123 1234</div>
+                </div>
+                <div class="col-xs-12 icon">
+                   <img src="images/location.png"><br>
+                   <div class="roboto iconText col-xs-12 icon">24 Madeup Str Pretoria</div>
+               </div>
+                </div> -->
+
+                <br/>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<script src="script/script.js"></script>
+</body>
+</html>
