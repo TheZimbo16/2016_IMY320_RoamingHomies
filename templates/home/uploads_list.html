@@ -1,0 +1,40 @@
+{% extends 'home/base.html' %}
+
+{% block 'content' %}
+<div class="bodyBlock col-md-11 col-md-offset-1">
+<div class="bodyHead col-md-11">
+	<h1>Uploaded Files</h1>
+</div>
+
+<div class= "bodyContent col-md-11">
+
+
+
+	<div class= "leftBorder col-md-10">
+
+		<div name="Events" id="Events" class="Events col-md-11">
+			{% for upload in uploads_list %}
+
+			<div class="announcementBlock col-md-12">
+
+				<div class="titleContainer col-md-12 noPadding">
+
+						<p><span class="title">File: {{upload.docfile}}</span> | <span class="subtitle">Group</span></p>
+
+				</div>
+
+
+				<div class="subtitle time col-md-12">
+				{{upload.uploaded_at}}
+		</div>
+	</div>
+
+</div>
+</div>
+{% if request.user.is_authenticated %}
+<a href="{% url 'upload' %}">Upload new file to server</a>
+{% endif %}
+</div>
+</div>
+
+{% endblock %}
