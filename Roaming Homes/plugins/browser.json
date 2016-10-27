@@ -1,0 +1,76 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "za.co.roaminghomes"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "za.co.roaminghomes"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "za.co.roaminghomes"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "za.co.roaminghomes"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "za.co.roaminghomes"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "za.co.roaminghomes"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "za.co.roaminghomes"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "za.co.roaminghomes"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "za.co.roaminghomes"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "za.co.roaminghomes"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "za.co.roaminghomes"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "za.co.roaminghomes"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "za.co.roaminghomes"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "za.co.roaminghomes"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "za.co.roaminghomes"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "za.co.roaminghomes"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "za.co.roaminghomes"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "za.co.roaminghomes"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "za.co.roaminghomes"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "za.co.roaminghomes"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "za.co.roaminghomes"
+        }
+    }
+}
